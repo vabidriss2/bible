@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Overwrite colors to standard Sophisticated Dark theme */
+  --color-slate-50: #0A0B10;
+  --color-slate-100: rgba(255, 255, 255, 0.08);
+  --color-slate-200: rgba(255, 255, 255, 0.15);
+  --color-slate-350: #94a3b8;
+  --color-slate-400: #94a3b8;
+  --color-slate-450: #64748b;
+  --color-slate-500: #64748b;
+  --color-slate-600: #cbd5e1;
+  --color-slate-750: rgba(255, 255, 255, 0.05);
+  --color-slate-700: rgba(255, 255, 255, 0.1);
+  --color-slate-800: #0D0F16;
+  --color-slate-850: #0D0F16;
+  --color-slate-900: #0D0F16;
+  --color-slate-950: #0A0B10;
+
+  --color-indigo-50: rgba(245, 158, 11, 0.08);
+  --color-indigo-100: rgba(245, 158, 11, 0.15);
+  --color-indigo-200: rgba(245, 158, 11, 0.25);
+  --color-indigo-300: #f59e0b;
+  --color-indigo-400: #d97706;
+  --color-indigo-500: #f59e0b;
+  --color-indigo-600: #d97706;
+  --color-indigo-700: #b45309;
+  --color-indigo-900: #0D0F16;
+  --color-indigo-950: #0A0B10;
+}
+
+/* Custom scrollbars for scriptures */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.2);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.4);
+}
+
+/* Base Body and HTML styling */
+html, body, #root {
+  background-color: #0A0B10 !important;
+  color: #e2e8f0 !important;
+  height: 100%;
+}
+
+/* Atmospheric Glow Background */
+.vitech-atmosphere {
+  background: radial-gradient(circle at 50% 40%, rgba(245, 158, 11, 0.06) 0%, transparent 60%);
+}
+
+/* Smooth active accent transitions */
+.bg-indigo-500, .bg-indigo-600 {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+}
+
+/* Force dark styles on elements with white background class names to look perfect in the theme */
+.bg-white, .bg-white\/80 {
+  background-color: #0D0F16 !important;
+}
+
+/* High contrast overrides for Sophisticated Dark theme legibility */
+.text-slate-900 {
+  color: #ffffff !important;
+}
+
+.text-slate-800 {
+  color: #f8fafc !important;
+}
+
+.text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+.text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+.text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+.text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+.border-slate-100 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.text-indigo-600 {
+  color: #f59e0b !important;
+}
+
+/* Correct selection of specific icons or labels for premium golden touch */
+.logo-v-box {
+  background-color: #f59e0b !important;
+  color: #0A0B10 !important;
+}

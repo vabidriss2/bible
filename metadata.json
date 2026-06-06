@@ -1,0 +1,6 @@
+{
+  "name": "Bible Électronique Pro Max",
+  "description": "Une application web professionnelle de la Bible avec animations, multilingue, favoris/likes, export d'images, et explications par IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

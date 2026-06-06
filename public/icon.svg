@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b10" />
+      <stop offset="105%" stop-color="#1e1b4b" />
+    </linearGradient>
+    
+    <!-- Gold Premium Gradient -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    
+    <!-- Outer Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <dropShadow dx="0" dy="8" stdDeviation="10" flood-color="#f59e0b" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Square Container (Pro Max Theme) -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bg-grad)" stroke="#ffffff" stroke-opacity="0.15" stroke-width="4" />
+  
+  <!-- Inner Holy Frame -->
+  <rect x="40" y="40" width="432" height="432" rx="76" fill="none" stroke="url(#gold-grad)" stroke-width="1.5" stroke-opacity="0.3" />
+  
+  <!-- Glowing Holy Cross & Bible Visual Concept -->
+  <g filter="url(#glow)">
+    <!-- Bible Base Shape -->
+    <path d="M140 180 C140 160, 250 160, 256 182 C262 160, 372 160, 372 180 L372 350 C372 330, 262 330, 256 350 C250 330, 140 330, 140 350 Z" 
+          fill="#111827" stroke="url(#gold-grad)" stroke-width="6" stroke-linejoin="round" />
+          
+    <!-- Left Hand Pages -->
+    <path d="M152 195 C152 182, 246 182, 250 198 L250 332 C246 316, 152 316, 152 329 Z" 
+          fill="#1f2937" stroke="url(#gold-grad)" stroke-width="2" />
+          
+    <!-- Right Hand Pages -->
+    <path d="M360 195 C360 182, 266 182, 262 198 L262 332 C266 316, 360 316, 360 329 Z" 
+          fill="#1f2937" stroke="url(#gold-grad)" stroke-width="2" />
+
+    <!-- Holy Glow Cross on Bible center -->
+    <path d="M256 120 L256 310" stroke="url(#gold-grad)" stroke-width="10" stroke-linecap="round" />
+    <path d="M210 180 L302 180" stroke="url(#gold-grad)" stroke-width="10" stroke-linecap="round" />
+  </g>
+  
+  <!-- Subtle typography in the icon -->
+  <text x="256" y="420" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="900" fill="url(#gold-grad)" text-anchor="middle" letter-spacing="4">BIBLE PRO</text>
+  <text x="256" y="445" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#a1a1aa" text-anchor="middle" letter-spacing="2">OFFLINE ENGINE</text>
+</svg>
